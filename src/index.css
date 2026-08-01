@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-matte-black: #0D0D0D;
+  --color-dark-charcoal: #181818;
+  --color-metallic-gold: #D4AF37;
+  --color-luxury-gold: #C9982B;
+  --color-border-dark: #2B2B2B;
+  --color-secondary-text: #CFCFCF;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --font-luxury: "Cinzel", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-matte-black text-white font-body antialiased selection:bg-metallic-gold selection:text-matte-black;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight;
+  }
+  
+  /* Hide scrollbar for clean editorial look */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0D0D0D; 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2B2B2B; 
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37; 
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .gold-gradient-text {
+    @apply bg-gradient-to-r from-metallic-gold to-luxury-gold bg-clip-text text-transparent;
+  }
+
+  .glass-nav {
+    @apply bg-matte-black/80 backdrop-blur-md border-b border-metallic-gold/30;
+  }
+}
