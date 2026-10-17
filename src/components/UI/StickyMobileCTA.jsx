@@ -1,3 +1,5 @@
+'use client'
+
 import { Calendar, MessageCircle, Phone, CreditCard } from 'lucide-react'
 
 export default function StickyMobileCTA() {

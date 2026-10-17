@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import { ShieldCheck, Award, Sparkles, Gem, Wind, CheckCircle2, UserCheck, Coffee, Scissors, Star } from 'lucide-react'
 

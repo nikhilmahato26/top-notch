@@ -1,3 +1,7 @@
+'use client'
+
+import Link from 'next/link'
+
 export default function Footer() {
   return (
     <footer className="bg-matte-black pt-20 pb-10 border-t border-border-dark">
@@ -70,6 +74,7 @@ export default function Footer() {
           <div className="flex gap-6">
             <a href="#" className="text-xs text-secondary-text font-light uppercase tracking-widest hover:text-metallic-gold transition-colors duration-300">Privacy Policy</a>
             <a href="#" className="text-xs text-secondary-text font-light uppercase tracking-widest hover:text-metallic-gold transition-colors duration-300">Terms & Conditions</a>
+            <Link href="/admin" className="text-xs text-secondary-text font-light uppercase tracking-widest hover:text-metallic-gold transition-colors duration-300">Admin Portal</Link>
           </div>
         </div>
       </div>
